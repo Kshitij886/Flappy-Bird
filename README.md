@@ -46,10 +46,7 @@ At first, the birds will perform terribly (as expected). Over generations, they 
 
 ## 🎥 Demo
 
-👉 [Watch the demo video](assets/ResultVid.gif)
-
-> Tip: GitHub does not support embedded video playback in README files.
-> Download or open the video manually if it doesn't preview.
+[![Flappy Bird AI Demo](assets/ResultVid.gif)](assets/ResultVid.gif)
 
 ---
 
