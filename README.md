@@ -41,6 +41,7 @@ The video demonstrating the AI playing Flappy Bird is available in the repositor
   <source src="assets/ResultVid.mp4" type="video/mp4">
   Your browser does not support the video tag. You can download the video directly from `assets/ResultVid.mp4`.
 </video>
+![Project Demo](assets/ResultVid.mp4)
 
 If the video does not display in your Markdown viewer, open `assets/ResultVid.mp4` directly.
 
