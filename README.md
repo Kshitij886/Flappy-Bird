@@ -1,51 +1,102 @@
-# Flappy Bird with NEAT AI
+# 🐦 Flappy Bird AI with NEAT
 
-This project is a Flappy Bird clone where the game learns to play itself using the NEAT algorithm.
+A Flappy Bird clone that learns to play itself using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm.
 
-## What was done
+## 🚀 Features
 
-- Implemented the Flappy Bird game logic in `main.py`.
-- Added training and gameplay support using the `neat-python` library.
-- Included a NEAT configuration file: `config-feedforward.txt`.
-- Added game assets in `assets/` for the bird, pipes, background, and base.
-- Included a demo video showing the trained AI playing the game: `assets/ResultVid.mp4`.
+* Fully implemented Flappy Bird game using `pygame`
+* AI training using `neat-python`
+* Neural networks evolve over generations
+* Real-time simulation of multiple birds learning simultaneously
 
-## Files in this project
+---
 
-- `main.py` - the game and training loop.
-- `config-feedforward.txt` - NEAT configuration settings for evolving the neural network.
-- `requirement.txt` - required Python packages (`neat-python`, `pygame`).
-- `assets/` - contains sprites and the demo video.
+## 📁 Project Structure
 
-## Requirements
+```
+.
+├── main.py                  # Game loop + NEAT training
+├── config-feedforward.txt  # NEAT configuration
+├── requirement.txt         # Dependencies
+└── assets/                 # Images + demo video
+```
 
-Install the dependencies before running the project:
+---
+
+## ⚙️ Requirements
+
+Install dependencies:
 
 ```bash
 pip install -r requirement.txt
 ```
 
-## How to run
+---
 
-Run the main script to start the game and training process:
+## ▶️ Run the Project
 
 ```bash
 python main.py
 ```
 
-## Demo video
+This will start training the AI.
+At first, the birds will perform terribly (as expected). Over generations, they improve.
 
-The video demonstrating the AI playing Flappy Bird is available in the repository:
+---
 
-<video controls width="640" height="360">
-  <source src="assets/ResultVid.mp4" type="video/mp4">
-  Your browser does not support the video tag. You can download the video directly from `assets/ResultVid.mp4`.
-</video>
-![Project Demo](assets/ResultVid.mp4)
+## 🎥 Demo
 
-If the video does not display in your Markdown viewer, open `assets/ResultVid.mp4` directly.
+👉 [Watch the demo video](assets/ResultVid.gif)
 
-## Notes
+> Tip: GitHub does not support embedded video playback in README files.
+> Download or open the video manually if it doesn't preview.
 
-This project uses a genetic algorithm approach to evolve bird agents over successive generations. The final AI learns to navigate through pipes by selecting when to flap.
+---
 
+## 🧠 How It Works
+
+* Each bird is controlled by a neural network
+* Inputs:
+
+  * Bird's vertical position
+  * Distance to top pipe
+  * Distance to bottom pipe
+* Output:
+
+  * Whether the bird should jump
+
+NEAT evolves these networks using:
+
+* Mutation
+* Crossover
+* Natural selection (fitness-based)
+
+---
+
+## 📌 Notes
+
+* Training is stochastic — results may vary
+* Adjust `config-feedforward.txt` to experiment with evolution behavior
+* Performance improves significantly after multiple generations
+
+---
+
+## 💡 Future Improvements
+
+* Save/load best model
+* Visualize neural networks
+* Add speed controls for faster training
+* Improve fitness function
+
+---
+
+## 🧪 Dependencies
+
+* pygame
+* neat-python
+
+---
+
+## 📜 License
+
+MIT License
